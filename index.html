@@ -9,7 +9,7 @@
     <link rel="shortcut icon" href="http://example.com/favicon.ico" />
 
     <!-- PERSONAL CSS -->
-    <!-- <link rel="stylesheet" href="css/screen.css" /> -->
+    <link rel="stylesheet" href="css/screen.css" />
 
     <!-- FONT AWESOME -->
     <!-- <script src="https://kit.fontawesome.com/9471a05e89.js" type="text/javascript" crossorigin="anonymous"></script> -->
@@ -23,10 +23,10 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </head>
 <body>
-    <nav class="navbar navbar-expand-sm navbar-light">
+    <nav class="navbar fixed-top navbar-expand-sm navbar-dark">
         <div class="d-flex flex-grow-1">
             <!-- BRAND -->
-            <a class="navbar-brand" href="#">tania tours</a>
+            <a class="navbar-brand" href="#">tania.tours</a>
 
             <!-- MOBILE BUTTON  -->
             <div class="flex-grow-1 text-right">  <!-- d-flex  justify-content-end align-middle -->
@@ -41,16 +41,16 @@
         <div class="collapse navbar-collapse flex-grow-1 text-right m-1" id="myNavbar">
             <ul class="navbar-nav ml-auto flex-nowrap">
                 <li class="nav-item">
-                    <a href="#" class="nav-link menu-item active">Home</a>
+                    <a href="#" class="nav-link menu-item active">Главная</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link menu-item">About</a>
+                    <a href="#" class="nav-link menu-item">Обо мне</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link menu-item">Tours</a>
+                    <a href="#" class="nav-link menu-item">Экскурсии</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link menu-item">Contact</a>
+                    <a href="#" class="nav-link menu-item">Cвязаться</a>
                 </li>
             </ul>
         </div>
@@ -58,8 +58,20 @@
 
     <!-- HEADER  -->
     <header>
-        
-        <!-- <div class="jumbotron"></div> -->
+        <div class="jumbotron jumbotron-fluid d-flex align-items-center text-light">
+            <div class="container">
+                <!-- <h1 class="display-4">Hello, world!</h1> -->
+
+                <h1>Привет! Я, </br>
+                    Татьяна Лавренова </br>
+                    Ваш гид по Бельгии
+                </h1>
+                <!-- <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p> -->
+                <hr class="my-4">
+                <!-- <p>It uses utility classes for typography and spacing to space content out within the larger container.</p> -->
+                <a class="btn btn-primary btn-lg" href="#" role="button">Экскурсии</a>
+            </div>
+        </div>
     </header>
 
     <main>
