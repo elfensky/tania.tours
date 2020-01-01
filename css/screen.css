@@ -423,11 +423,17 @@ textarea {
 /*------------------------------------*\
   #COMPONENTS
 \*------------------------------------*/
-.jumbotron {
+.c-jumbotron {
   background-image: url("../img/jumbotron.jpg");
   background-size: cover;
+  background-position: center;
   height: 100vh;
-  margin-bottom: 0 !important;
+}
+
+.c-belgium {
+  background-image: url("../img/belgium.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
 /*------------------------------------*\
