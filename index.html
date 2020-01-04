@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
     <!-- <meta http-equiv="X-UA-Compatible" content="ie=edge"> --> 
-    <title>Tania's Tours</title>
+    <title>taniatours – экскурсии в Бельгии</title>
     <link rel="shortcut icon" href="http://example.com/favicon.ico" />
 
     <!-- PERSONAL CSS -->
@@ -21,6 +21,8 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+   
 </head>
 <body>
     <!-- HEADER  -->
@@ -44,106 +46,203 @@
             <div class="collapse navbar-collapse flex-grow-1 text-right m-1" id="myNavbar">
                 <ul class="navbar-nav ml-auto flex-nowrap">
                     <li class="nav-item">
-                        <a href="#" class="nav-link menu-item active">Главная</a>
+                        <a href="javascript:smooth('top');" class="nav-link menu-item active">Главная</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#about" class="nav-link menu-item">Обо мне</a>
+                      <a href="javascript:smooth('about');" class="nav-link menu-item">Обо мне</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#tours" class="nav-link menu-item">Экскурсии</a>
+                      <a href="javascript:smooth('blog');" class="nav-link menu-item">Блог</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#contact" class="nav-link menu-item">Cвязаться</a>
+                      <a href="javascript:smooth('tours');" class="nav-link menu-item">Экскурсии</a>
+                    </li> 
+                    <li class="nav-item">
+                      <a href="javascript:smooth('contact');" class="nav-link menu-item">Cвязаться</a>
                     </li>
                 </ul>
             </div>
         </nav>
 
+        <!-- JAVASCRIPT -->
+        <script src="js/scroll.js"></script> 
+
         <!-- JUMBOTRON -->
-        <div class="jumbotron jumbotron-fluid d-flex align-items-center text-light c-jumbotron">
+        <div id="top" class="jumbotron jumbotron-fluid d-flex align-items-center text-light c-jumbotron">
             <div class="container">
                 <!-- <h1 class="display-4">Hello, world!</h1> -->
 
                 <h1>Привет! Я, </br>
-                    Татьяна Лавренова </br>
-                    Ваш гид по Бельгии
+                    Татьяна Лавренова.</br>
+                    Ваш гид по Бельгии!
                 </h1>
                 <!-- <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p> -->
                 <hr class="my-4">
                 <!-- <p>It uses utility classes for typography and spacing to space content out within the larger container.</p> -->
-                <a class="btn btn-primary btn-lg" href="#" role="button">Экскурсии</a>
+                <a class="btn btn-primary btn-lg mr-3" href="javascript:smooth('tours');" role="button">Экскурсии</a>
+                <a class="btn btn-outline-light btn-lg" href="javascript:smooth('about');">Узнать больше</a>
             </div>
         </div>
     </header>
 
     <!-- CONTENT  -->
     <main>
-        <!-- ABOUT ME  -->
-        <article id="about" class="container">
-            <p>
-                Меня зовут Татьяна Лавренова. Работаю экскурсоводом в городах Брюссель, Гент, Лёвен, Брюгге, Дамме, Антверпен и Хугарден, а также в аббатстве Виллерс. </br></br>
-                Моим туристам я с удовольствием рассказываю не только о достопримечательностях Бельгии, но также о повседневной жизни бельгийцев, о традициях, достижениях, обычаях, привычках и законах этой маленькой, но весьма интересной страны.
-            </p>
-        </article>
+      <!-- ABOUT ME  -->
+      <article id="about" class="my-5">
+        <div class="container">
+          <div class="row row-cols-1 row-cols-md-2">
+            <div class="col">
+                <h2 class="mb-5">Обо мне</h2>
+                <p class="pb-5">
+                    Меня зовут Татьяна Лавренова. Работаю экскурсоводом в городах Брюссель, Гент, Лёвен, Брюгге, Дамме, Антверпен и Хугарден, а также в аббатстве Виллерс. </br></br>
+                    Моим туристам я с удовольствием рассказываю не только о достопримечательностях Бельгии, но также о повседневной жизни бельгийцев, о традициях, достижениях, обычаях, привычках и законах этой маленькой, но весьма интересной страны.
+                </p>
+            </div>
+            <div class="col">
+              <div class="rounded c-about-image h-100"></div>
+              <!-- <img src="img/tania2.jpg" alt=""> -->
+            </div>
+          </div>   
+        </div>
+        
+      </article>
 
-        <!-- ABOUT BELGIUM  -->
-        <article id="belgium" class="c-belgium container-fluid p-4">
-            <div class="container">
-                <div class="card" style="width: 18rem;">
-                    <img src="img/belgium-card.jpg" class="card-img-top" alt="background of a bus stop in Bruges">
-                    <div class="card-body">
-                      <h5 class="card-title">Удивительная Бельгия</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-primary">Читать дальше</a>
-                    </div>
-                </div>
+      <!-- BLOG  -->
+      <article id="blog" class="c-blog container-fluid p-4 my-5">
+        <div class="container my-5">
+          <div>
+            <h2 class="mb-5">Блог</h2>
+          </div>
+          <div class="card-columns">
+            <div class="card">
+              <img src="img/belgium-card.jpg" class="card-img-top" alt="background of a bus stop in Bruges">
+              <div class="card-body">
+                <h5 class="card-title">Удивительная Бельгия</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Читать дальше</a>
+              </div>
             </div>
-        </article>
+          </div>
+          
+          
+        </div>
+      </article>
 
-        <!-- TOURS  -->
-        <section id="tours" class="c-tours p-4">
-            <div>
-                <h2>Экскурсии</h2>
-            </div>
-            
-            <div class="row row-cols-1 row-cols-md-3">
-              <div class="col mb-4">
-                <div class="card">
-                  <img src="..." class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col mb-4">
-                <div class="card">
-                  <img src="..." class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col mb-4">
-                <div class="card">
-                  <img src="..." class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col mb-4">
-                <div class="card">
-                  <img src="..." class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  </div>
-                </div>
+      <!-- TOURS  -->
+      <section id="tours" class="c-tours p-4">
+        <div class="container">
+          <div>
+            <h2 class="mb-5">Экскурсии</h2>
+          </div>
+
+          <div class="card-columns">
+            <div class="card">
+              <img src="img/tours/abbeyvillers3.jpg" class="card-img-top" alt="ruins of an old abbey church">
+              <!-- image by © Jean-Pol GRANDMONT
+                   https://creativecommons.org/licenses/by-sa/3.0/ 
+                   https://en.wikipedia.org/wiki/File:0_Villers-la-Ville.JPG#/media/File:0_Villers-la-Ville_050910_(7).JPG
+              -->
+              <div class="card-body">
+                <h5 class="card-title">Аббатство Виллерс</h5>
+                <p class="card-text">Краткое описание из двух-трех предложений места и / или тура. Коротко и ясно.</p>
+                <a href="#" class="btn btn-primary">Заказать</a>
+                <a href="#" class="btn card-link float-right">Читать дальше</a>
               </div>
             </div>
+
+            <div class="card">
+              <img src="img/tours/bruges.jpg" class="card-img-top" alt="towers in Bruges">
+              <!-- image by © Hans Hillewaert 
+                   https://creativecommons.org/licenses/by-sa/3.0/ 
+                   https://en.wikipedia.org/wiki/Bruges#/media/File:Rozenhoedkaai_Brugge.jpg  
+              -->
+              <div class="card-body">
+                <h5 class="card-title">Брюгге</h5>
+                <p class="card-text">Краткое описание из двух-трех предложений места и / или тура. Коротко и ясно.</p>
+                <a href="#" class="btn btn-primary">Заказать</a>
+                <a href="#" class="btn card-link float-right">Читать дальше</a>
+              </div>
+            </div>
+
+            <div class="card">
+              <img src="img/tours/ghent.jpg" class="card-img-top" alt="buildings in Ghent">
+              <!-- image by © Karelj
+                   I, the copyright holder of this work, release this work into the public domain. This applies worldwide.
+                   https://en.wikipedia.org/wiki/File:Ghent_hist_centrum_2.jpg
+              -->
+              <div class="card-body">
+                <h5 class="card-title">Гент</h5>
+                <p class="card-text">Краткое описание из двух-трех предложений места и / или тура. Коротко и ясно.</p>
+                <a href="#" class="btn btn-primary">Заказать</a>
+                <a href="#" class="btn card-link float-right">Читать дальше</a>
+              </div>
+            </div>
+
+            <div class="card">
+              <img src="img/tours/leuven.jpg" class="card-img-top" alt="...">
+              <!-- image by © Steven Fruitsmaak
+                   I, the copyright holder of this work, release this work into the public domain. This applies worldwide.
+                   https://en.wikipedia.org/wiki/Leuven#/media/File:Martelarenplein_Leuven_2008.jpg
+              -->
+              <div class="card-body">
+                <h5 class="card-title">Левен</h5>
+                <p class="card-text">Краткое описание из двух-трех предложений места и / или тура. Коротко и ясно.</p>
+                <a href="#" class="btn btn-primary">Заказать</a>
+                <a href="#" class="btn card-link float-right">Читать дальше</a>
+              </div>
+            </div>
+
+            <div class="card">
+              <img src="img/tours/damme.jpg" class="card-img-top" alt="Damme's city hall">
+              <!-- image by © Jean-Pol GRANDMONT
+                   https://creativecommons.org/licenses/by-sa/3.0/
+                   https://commons.wikimedia.org/wiki/File:0_Damme_-_Stadhuis_(1).JPG
+              -->
+              <div class="card-body">
+                <h5 class="card-title">Дамме</h5>
+                <p class="card-text">Краткое описание из двух-трех предложений места и / или тура. Коротко и ясно.</p>
+                <a href="#" class="btn btn-primary">Заказать</a>
+                <a href="#" class="btn card-link float-right">Читать дальше</a>
+              </div>
+            </div>
+
+            <div class="card">
+              <img src="img/tours/brussels.jpg" class="card-img-top" alt="a skyline of Brussels">
+              <!-- image by © Jean-Pol GRANDMONT
+                   https://creativecommons.org/licenses/by-sa/3.0/
+                   https://en.wikipedia.org/wiki/File:00_Bruxelles_-_Mont_des_Arts.jpg
+              -->
+              <div class="card-body">
+                <h5 class="card-title">Брюссель</h5>
+                <p class="card-text">Краткое описание из двух-трех предложений места и / или тура. Коротко и ясно.</p>
+                <a href="#" class="btn btn-primary">Заказать</a>
+                <a href="#" class="btn card-link float-right">Читать дальше</a>
+              </div>
+            </div>
+
+            <div class="card">
+              <img src="img/tours/antwerp.jpg" class="card-img-top" alt="...">
+              <!-- image by © Ad Meskens
+                   https://creativecommons.org/licenses/by-sa/3.0/
+                   https://en.wikipedia.org/wiki/File:Antwerpen_kathedraal02.jpg
+              -->
+              <div class="card-body">
+                <h5 class="card-title">Антверпен</h5>
+                <p class="card-text">Краткое описание из двух-трех предложений места и / или тура. Коротко и ясно.</p>
+                <a href="#" class="btn btn-primary">Заказать</a>
+                <a href="#" class="btn card-link float-right">Читать дальше</a>
+              </div>
+            </div>
+          </div>
+        </div>
+          
+      </section>
+
+        <!-- CONTACT  -->
+        <section id="contact" class="container">
+            <!-- show a map -->
+            <!-- card on top of map  -->
+            map
         </section>
 
     </main>

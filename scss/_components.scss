@@ -10,8 +10,23 @@
     // margin-bottom: 0 !important;
   }
 
-.c-belgium{
+.c-about-image{
+  background-image: url("../img/tania2.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.c-blog{
     background-image: url("../img/belgium.jpg");
     background-size: cover;
     background-position: center;
 }
+
+.card-img-top{
+  object-fit: cover !important;
+  // max-height: 300px !important;
+  object-position: center;
+  height: 250px;
+}
+
+// $card-height: 100% !important;
