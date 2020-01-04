@@ -7,7 +7,7 @@ window.addEventListener('scroll', function() {
     scrollpos = window.scrollY;  
     // this.console.log(scrollpos);  
     
-    if (scrollpos >= (h-100))
+    if (scrollpos >= (h-125))
     { 
         nav.classList.add("bg-dark");
     }
@@ -19,8 +19,13 @@ window.addEventListener('scroll', function() {
 
 function smooth(id)
 {
-    console.log(id);
-    var element = document.getElementById(id);
-    console.log(element);
-    element.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+    // console.log(id);
+    // var element = document.getElementById(id);
+    // console.log(element);
+    // element.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+
+    let yOffset = -80; 
+    let element = document.getElementById(id);
+    let y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+    window.scrollTo({top: y, behavior: 'smooth'});
 }
