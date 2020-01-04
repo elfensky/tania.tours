@@ -430,10 +430,22 @@ textarea {
   height: 100vh;
 }
 
-.c-belgium {
+.c-about-image {
+  background-image: url("../img/tania2.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.c-blog {
   background-image: url("../img/belgium.jpg");
   background-size: cover;
   background-position: center;
+}
+
+.card-img-top {
+  object-fit: cover !important;
+  object-position: center;
+  height: 250px;
 }
 
 /*------------------------------------*\
