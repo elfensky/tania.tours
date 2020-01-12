@@ -158,7 +158,7 @@
               -->
               <div class="card-body">
                 <h5 class="card-title">Брюгге</h5>
-                <p class="card-text">Краткое описание из двух-трех предложений места и / или тура. Коротко и ясно.</p>
+                <p class="card-text">старинный, почти сказочный, средневековый город, одна история появления которого достойна пера Шекспира или Петрарки...</p>
                 <a href="#" class="btn btn-primary">Заказать</a>
                 <a href="#" class="btn card-link float-right">Читать дальше</a>
               </div>
@@ -172,7 +172,7 @@
               -->
               <div class="card-body">
                 <h5 class="card-title">Гент</h5>
-                <p class="card-text">Краткое описание из двух-трех предложений места и / или тура. Коротко и ясно.</p>
+                <p class="card-text">Город, благодаря которому в Брюсселе появился цветочный ковёр, а в Европе - цветочные флоралии; город, в котором трамваи едут в Москву, промышленному шпиону поставлен памятник, а местная легенда прячет в одном из монастырей чашу Грааля. Город, где родилась Синяя птица.</p>
                 <a href="#" class="btn btn-primary">Заказать</a>
                 <a href="#" class="btn card-link float-right">Читать дальше</a>
               </div>
@@ -186,7 +186,7 @@
               -->
               <div class="card-body">
                 <h5 class="card-title">Левен</h5>
-                <p class="card-text">Краткое описание из двух-трех предложений места и / или тура. Коротко и ясно.</p>
+                <p class="card-text">чудесный и очень атмосферный университетский городок в 23 минутах от Брюсселя. С потрясающей историей, с кружевными зданиями, с веселыми городскими скульптурами... Город-счастье, город-молодость, город-мечта.</p>
                 <a href="#" class="btn btn-primary">Заказать</a>
                 <a href="#" class="btn card-link float-right">Читать дальше</a>
               </div>
@@ -200,7 +200,7 @@
               -->
               <div class="card-body">
                 <h5 class="card-title">Дамме</h5>
-                <p class="card-text">Краткое описание из двух-трех предложений места и / или тура. Коротко и ясно.</p>
+                <p class="card-text">пасторальный, умиротворяющий городок в 6 км от Брюгге. Родина Тиля Уленшпигеля и Ламме Гудзака.</p>
                 <a href="#" class="btn btn-primary">Заказать</a>
                 <a href="#" class="btn card-link float-right">Читать дальше</a>
               </div>
@@ -214,7 +214,7 @@
               -->
               <div class="card-body">
                 <h5 class="card-title">Брюссель</h5>
-                <p class="card-text">Краткое описание из двух-трех предложений места и / или тура. Коротко и ясно.</p>
+                <p class="card-text">яркий, шоколадный, модный, и даже кое-где хвастливый город, где готика соседствует с ар-нуво, пиво с шампанским, а лобстер с картошкой фри.</p>
                 <a href="#" class="btn btn-primary">Заказать</a>
                 <a href="#" class="btn card-link float-right">Читать дальше</a>
               </div>
@@ -233,16 +233,102 @@
                 <a href="#" class="btn card-link float-right">Читать дальше</a>
               </div>
             </div>
+
+            <div class="card">
+              <img src="img/tours/hoegaarden.jpg" class="card-img-top" alt="...">
+              <!-- image by © Michielverbeek
+                   https://creativecommons.org/licenses/by-sa/3.0/
+                   https://en.wikipedia.org/wiki/Hoegaarden#/media/File:Hoegaarden,_kerk_foto1_2011-09-25_11.43.JPG
+              -->
+              <div class="card-body">
+                <h5 class="card-title">Хугарден</h5>
+                <p class="card-text">если и пробовать пиво, то обязательно здесь: Завод Хугарден и пять местных пивных с собственными крафтовыми сортами пива, это ли не рай для гурманов  ?</p>
+                <a href="#" class="btn btn-primary">Заказать</a>
+                <a href="#" class="btn card-link float-right">Читать дальше</a>
+              </div>
+            </div>
           </div>
         </div>
           
       </section>
 
         <!-- CONTACT  -->
-        <section id="contact" class="container">
-            <!-- show a map -->
-            <!-- card on top of map  -->
-            map
+        <section id="contact" class="c-contact  py-5">
+          <div class="c-contact__background">
+              <!-- show a map -->
+              <!-- card on top of map  -->
+              <div class="c-contact__overlay"></div>
+              <div id="map" class="c-contact__map"></div>
+              <!-- JAVASCRIPT -->
+              <!-- <!-- <script src="js/maps.js"></script>  --> -->
+              <!-- <!-- <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDTOcWu4YaAmLm14CD4y4NyWrhIH18eiJ8&callback=initMap"></script> --> -->
+          </div>
+          <div class="c-contact__content">
+            <div class="container my-5 c-form">
+              <div>
+                <h2 class="mb-5">Cвязаться</h2>
+              </div>
+              <div class="card-columns">
+                <div class="card p-4">
+                  <form id="contact__form" method="post" action="php/contact.php" role="form">
+
+                    <div id="contact__message" class="messages"></div>
+                
+                    <div class="controls">
+                        
+                        <div class="form-group"> <!-- SURNAME  -->
+                          <label for="form_name">Firstname *</label>
+                          <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
+                          <div class="help-block with-errors"></div>
+                        </div>
+                        
+                        <div class="form-group"> <!-- NAME  -->
+                          <label for="form_lastname">Lastname *</label>
+                          <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your lastname *" required="required" data-error="Lastname is required.">
+                          <div class="help-block with-errors"></div>
+                        </div>
+                        
+                        <div class="form-group"> <!-- EMAIL  -->
+                          <label for="form_email">Email *</label>
+                          <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
+                          <div class="help-block with-errors"></div>
+                        </div>
+                        
+                        <div class="form-group"> <!-- TOUR  -->
+                          <label for="form_need">Tour *</label>
+                          <select id="form_need" name="need" class="form-control" required="required" data-error="Please specify your need.">
+                              <option value=""></option>
+                              <option value="Request quotation">Bruges</option>
+                              <option value="Request order status">Leuven</option>
+                              <option value="Request copy of an invoice">Hoegaarden</option>
+                              <option value="Other">Other</option>
+                          </select>
+                          <div class="help-block with-errors"></div>
+                        </div>
+                        
+                        <div class="form-group"> <!-- MESSAGE  -->
+                          <label for="form_message">Message *</label>
+                          <textarea id="form_message" name="message" class="form-control" placeholder="Message for me *" rows="4" required="required" data-error="Please, leave us a message."></textarea>
+                          <div class="help-block with-errors"></div>
+                        </div>
+
+                        <input type="submit" class="btn btn-success btn-send" value="Send message">
+                
+                        <div class="row">
+                          <div class="col-md-12">
+                              <p class="text-muted">
+                                  <strong>*</strong> These fields are required. Contact form template by
+                                  <a href="https://bootstrapious.com/p/how-to-build-a-working-bootstrap-contact-form" target="_blank">Bootstrapious</a>.</p>
+                          </div>
+                        </div>
+                        
+                    </div>
+                
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
         </section>
 
     </main>

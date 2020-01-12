@@ -423,6 +423,10 @@ textarea {
 /*------------------------------------*\
   #COMPONENTS
 \*------------------------------------*/
+body {
+  font-size: 16px;
+}
+
 .c-jumbotron {
   background-image: url("../img/jumbotron.jpg");
   background-size: cover;
@@ -448,6 +452,27 @@ textarea {
   height: 250px;
 }
 
+.c-contact {
+  position: relative;
+  overflow: hidden;
+}
+.c-contact__background {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+.c-contact__overlay {
+  position: absolute;
+  background-color: rgba(255, 215, 0, 0.7);
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+.c-contact__map {
+  pointer-events: none;
+  height: 100%;
+  z-index: -2;
+}
 /*------------------------------------*\
   #UTILITIES
 \*------------------------------------*/
