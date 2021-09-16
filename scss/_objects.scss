@@ -4,4 +4,88 @@
 
 //Objects
 //class-based selectors which define undecorated design patterns, for example media object known from OOCSS
+.o-section{
+    display: flex;
+    position: relative;
+    // height: calc(100vw/2);
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
 
+.o-grid {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    width: 50%; //vw is too much for some reason idk
+    height: inherit;
+    // padding-left: $width-1_16;
+    border-right: 1px solid rgba(0,0,0,0.2);
+
+    &--left{
+        padding-left: $width-1_16;
+        // border-left: none;
+        // border-right: 1px solid rgba(0,0,0,0.2);
+    }
+
+    &__title { 
+        grid-area: 3 / 1 / 5 / 9; 
+        font-weight: $bold;
+        font-size: 7.25vw;
+        // background-color: red;
+
+        &--align{
+            position: relative;
+            left: -7px;
+            top: -5.25vh;
+        }
+    }
+
+    &__sub-title { 
+        grid-area: 5 / 1 / 6 / 5;
+        font-weight: $medium;
+        font-size: 1.8125vw;
+        // background-color: green;
+    }
+
+    &__info{
+        // grid-area: 6 / 1 / 7 / 5;
+        grid-area: 6 / 1 / 9 / 5;
+        font-size: 1vw;
+        // background-color: orange;
+        // z-index: 2;
+    }
+
+    &__links { 
+        grid-area: 7 / 1 / 8 / 5;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: space-between;
+        font-size: 1.125vw;
+        // background-color: lightseagreen;
+        // z-index: 1;
+
+        &--single{
+            justify-content: flex-end;
+        }
+        
+        // a{
+        //     // color: black;
+        // }
+    }
+
+    &__social { 
+        grid-area: 5 / 7 / 9 / 8;
+        display: flex;
+        flex-direction: column;
+        font-size: 1.6vw;
+
+        a{
+            margin-bottom: 1rem;
+            color: white;
+        }
+    } 
+}

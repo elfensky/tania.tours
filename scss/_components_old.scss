@@ -1,0 +1,133 @@
+//Components
+//specific UI components. 
+//This is where the majority of our work takes place and our UI components are often composed of Objects and Components
+body{
+  font-size: 16px;
+}
+
+.c-jumbotron {
+    background-image: url("../img/jumbotron.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    // margin-bottom: 0 !important;
+  }
+
+.c-about-image{
+  background-image: url("../img/tania2.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.c-blog{
+    background-image: url("../img/belgium.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.card-img-top{
+  object-fit: cover !important;
+  // max-height: 300px !important;
+  object-position: center;
+  height: 250px;
+}
+
+.c-contact{
+  position: relative;
+  overflow: hidden;
+
+  &__background{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+  }
+
+  &__overlay{
+    position: absolute;
+    background-color: rgba($color: #FFD700, $alpha: 0.7);
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+  }
+
+  &__map{
+    pointer-events: none;
+    height: 100%;
+    z-index: -2;
+    // filter: blur(3px);
+  }
+
+  &__form{
+
+  }
+}
+
+
+header {
+  position: relative;
+  background-color: black;
+  height: 100vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+header video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+header .container {
+  position: relative;
+  z-index: 2;
+}
+
+header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba($color: #FFD700, $alpha: 0.7);
+  // opacity: 0.5;
+  z-index: 1;
+}
+
+header hr
+{
+  width: 6rem;
+  border: 1px solid black;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+  .card-columns{
+    column-count: 2 !important;
+  }
+}
+
+@media (max-width: 768px) {
+  
+  .card-columns{
+    column-count: 1 !important;
+  }
+}
+
+@media (pointer: coarse) and (hover: none) {
+  header {
+    background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
+  }
+  header video {
+    display: none;
+  }
+}

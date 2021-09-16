@@ -3,3 +3,32 @@
 //read more on https://www.xfive.co/blog/itcss-scalable-maintainable-css-architecture/
 
 //Settings – used with preprocessors and contain font, colors definitions, etc.
+$font-size: 16px;
+$font-primary: 'Helvetica Neue';
+$font-secondary: Roboto;
+
+
+$color-gray: #bababa;
+
+
+$width-100: 100vw;
+$width-75: 75vw;
+$width-1_2: 50vw;
+$width-1_4: 25vw;
+$width-1_8: 12.5vw;
+$width-1_16: 6.25vw;
+
+$height-100: 100vh;
+$height-75: 75vh;
+$height-1_2: 50vh;
+$height-1_4: 25vh;
+$height-1_8: 12.5vh;
+$height-1_16: 6.25vh;
+
+$bold: 600;
+$medium: 500;
+$regular: 400;
+
+@mixin random-bgr(){
+    background: rgb(random(255), random(255), random(255));
+}

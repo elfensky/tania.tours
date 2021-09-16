@@ -1,0 +1,28 @@
+.c-aboutme{
+    // background-color:lightslategray;
+
+    &__grid{
+        // background-color: lightsalmon;
+        
+    }
+
+    &__image{
+        position: absolute;
+        right: 0;
+        // background-color: red;
+        height: 100%;
+        width: 50%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img{
+            height: 90%;
+        }
+    }
+
+    &__details{
+        grid-area: 7/1/8/7;
+    }
+}
