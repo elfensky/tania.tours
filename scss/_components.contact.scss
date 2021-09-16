@@ -1,0 +1,60 @@
+.c-contact{
+    &__background{
+        height: 100vh;
+        width: 100vw;
+        position: absolute;
+        z-index: -1;
+    }
+
+    &__overlay{
+        height: 100vh;
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.6);
+        z-index: -1;
+        width: 100vw;
+    }
+
+    &__map{
+        height: 100vh;
+        z-index: -2;
+    }
+
+    &__left{
+        color:white;
+    }
+
+    &__right{
+        background-color: rgba(0, 0, 0, 0);
+        padding: 0;
+    }
+
+    &__form{
+        height: 75%;
+        width: 50%;
+        // height: 100%;
+
+        margin: auto 0;
+        background-color: white;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+
+        height: 50%;
+width: 50%;
+margin: 50vh 0 0 0;
+    }
+
+    &__controls{
+        width: 100%;
+        height: 100%;
+
+        textarea{
+            width: 100%;
+            height: 100%;
+            border: none;
+            padding: 1rem 1rem 1rem 0;
+
+        }
+    }
+}

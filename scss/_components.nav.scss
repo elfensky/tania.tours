@@ -1,0 +1,30 @@
+.navbar{
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    height: 6.25vh;
+
+    &__left{
+        width: 50vw;
+    }
+
+    &__right{
+        flex-grow: 1;
+        text-align: left;
+        display: flex;
+        align-items: end;
+    }
+
+    &__list{
+        display: flex;
+    }
+
+    &__item{
+        margin-right: 1.25vw;
+        font-size: 1.25vw;
+
+    }
+}

@@ -1,0 +1,165 @@
+.c-tours{
+    //something tours
+    overflow: visible;
+    height: auto;
+
+    &__grid{
+        // height: 100vh;
+        height: calc(100vw/2);
+        z-index: -3;
+
+        &--fixed{
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
+    }
+
+    &__container{
+        padding-top: 35vh;
+        &--fixed{
+            margin-left:50%;
+        }
+    }
+
+    &__image{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 50%;
+        height: 100vh;
+        z-index: -1;
+        
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        
+
+        // background-image: url("../img/tours/bruges.jpg");
+        animation: image_fade_out 1s;
+        opacity: 0;
+        // background-color: black;
+
+    }
+
+    &__post{
+        width: 25vw;
+        margin-bottom: 2vw;
+        display: flex;
+        flex-direction: row;
+        // width: 40vw;
+
+        // &:hover{
+        //     background-color:lightyellow;
+        // }
+
+        &:hover &__link{
+            transition: padding-bottom 0.5s ease;
+            padding-bottom: 2.25vw;
+        }
+
+        &__left{
+            width: 15vw;
+        }
+
+        &__right{
+            width: 25vw;
+        }
+        
+
+        &__title{
+            font-weight: 500;
+            font-size: 1.8125vw;
+            margin-bottom: 0.5vw;
+        }
+
+        &__info{
+            font-weight: 400;
+            font-size: 1vw;
+            margin-bottom: 0.5vw;
+        }
+
+        &__text{
+            font-weight: 400;
+            font-size: 1vw;
+            margin-bottom: 0.5vw;
+        }
+
+        &__link{
+            font-weight: 400;
+            font-size: 1.125vw;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            transition: padding-bottom 0.5s ease;
+            padding-bottom: 1.125vw;
+            border-bottom: 1px solid black;
+             a{
+                margin-left: 1.8125vw;
+            }
+        }
+    }
+}
+
+@keyframes image_fade_in {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes image_fade_out {
+  from {opacity: 1;}
+  to {opacity: 0;}
+}
+
+#abbeyvillers ~ #image{
+    opacity: 0;
+    transition: 2s ease;
+    // animation: image_fade_in 1s ;
+    background-image: url("");
+}
+
+#abbeyvillers:hover ~ #image{
+    opacity: 1;
+    transition: 2s ease;
+    // animation: image_fade_in 1s ;
+    background-image: url("../img/tours/abbeyvillers3.jpg");
+    // object-fit: cover;
+    // background-position: center;
+    // background-clip: 
+}
+
+#bruges ~ #image{
+    opacity: 0;
+    transition: 1s ease;
+    // animation: image_fade_in 1s ;
+    background-image: url("#");
+}
+
+#bruges:hover ~ #image{
+    animation: image_fade_in 1s ;
+    background-image: url("../img/tours/bruges.jpg");
+}
+
+#ghent:hover ~ #image{
+    background-image: url("../img/tours/ghent.jpg");
+}
+
+#leuven:hover ~ #image{
+    background-image: url("../img/tours/leuven.jpg");
+}
+
+#damme:hover ~ #image{
+    background-image: url("../img/tours/damme.jpg");
+}
+
+#brussels:hover ~ #image{
+    background-image: url("../img/tours/brussels.jpg");
+}
+
+#antwerp:hover ~ #image{
+    background-image: url("../img/tours/antwerp.jpg");
+}
+
+#hoegaarden:hover ~ #image{
+    background-image: url("../img/tours/hoegaarden.jpg");
+}

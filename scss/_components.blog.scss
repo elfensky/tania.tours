@@ -1,0 +1,63 @@
+.c-blog{
+    background-image: url("../img/belgium.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    // background-position-y: center;
+
+    &__grid{
+        padding-top: 35vh;
+        display: flex;
+        flex-direction: column;
+        // overflow-y: scroll;
+    }
+
+    &__image{
+        position: absolute;
+        right: 0;
+        // background-color: red;
+        height: 100%;
+        width: 50%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img{
+            height: 90%;
+        }
+    }
+
+    &__post{
+        width: 25vw;
+        border-bottom: 1px solid black;
+        margin-bottom: 2vw;
+
+        &__title{
+            font-weight: 500;
+            font-size: 1.8125vw;
+            margin-bottom: 0.5vw;
+        }
+
+        &__info{
+            font-weight: 400;
+            font-size: 1vw;
+            margin-bottom: 0.5vw;
+        }
+
+        &__text{
+            font-weight: 400;
+            font-size: 1vw;
+            margin-bottom: 0.5vw;
+        }
+
+        &__link{
+            font-weight: 400;
+            font-size: 1.125vw;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            margin-bottom: 1.125vw;
+        }
+    }
+}

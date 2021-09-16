@@ -1,0 +1,51 @@
+.c-header{
+    // position: relative;
+    // height: calc(100vw/2);
+    // width: 100%;
+    // background-color: lightblue;
+    flex: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    // overflow: hidden;
+    background-color: rgba(0,0,0,0.5);
+
+    &__video{
+        position: absolute;
+        z-index: -2;
+        // width: $width-100;
+        //horizontally and vertically center the video
+        // margin: auto;
+        // top: 0;
+        // left: 0;
+        // bottom: 0;
+        // right: 0;
+
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    &__grid{
+        background-color:rgba(236, 236, 236, 0.98);
+        background-color: rgba(0,0,0,0.25);
+        color: white;
+    }
+
+    &__links a{
+        color:white;
+    }
+}
+
+
+#instagram:hover{ 
+    display: inline-table;
+    background: -webkit-linear-gradient(#eee, #333);
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#facebook:hover{ color: #3b5998; }
+#twitter:hover{ color: #1da1f2; }
+#whatsapp:hover{ color: #25D366; }
+#viber:hover{ color: rgb(115, 96, 242); }
