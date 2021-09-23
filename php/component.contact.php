@@ -30,7 +30,7 @@
 
   <!-- RIGHT SQUARE  -->
   <div class="o-grid c-header__grid">
-    <form action="">
+    <!-- <form action="">
       
     </form>
 
@@ -44,7 +44,7 @@
     <div class="o-grid__links c-header__links">
 
       <a href="javascript:smooth('aboutme');"></a>
-      <a href="javascript:smooth('tours');">Отправить >></a>
+      <a href="javascript:smooth('tours');">Отправить >></a> -->
 
     </div>
     <div class="o-grid__social">

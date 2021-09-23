@@ -9,7 +9,7 @@
     <!-- <link rel="shortcut icon" href="http://example.com/favicon.ico" /> -->
 
     <!-- FONT AWESOME -->
-    <script src="https://kit.fontawesome.com/9471a05e89.js" type="text/javascript" crossorigin="anonymous"></script>
+    <!-- <script src="https://kit.fontawesome.com/9471a05e89.js" type="text/javascript" crossorigin="anonymous"></script> -->
     
     <!-- JQUERY -->
     <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
@@ -48,6 +48,7 @@
 
     <!-- JAVASCRIPT -->
     <script src="js/scroll.js"></script>
+    <script type="text/javascript" defer src="fonts/fontawesome/js/all.js"></script>
 
     <!-- <script>
         $(function() {
